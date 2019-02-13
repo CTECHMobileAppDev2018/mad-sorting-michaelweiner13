@@ -64,7 +64,7 @@ class Sort {
     }
 
 
-    // Test sort()
+    // Test insertionSort() and quickSort()
     public static void main(String args[]) {
         double arr[] = {10.0, 7.1, 8.6, 9.9, 1.8, 5.0};
         System.out.println("Original Array: ");
@@ -82,9 +82,9 @@ class Sort {
         // INSERTION SORT
         Sort sorter = new Sort(); // Create an Insertion Sort object
 
-        long insertionStartTime = System.currentTimeMillis(); // Start timer before the method is called
+        long insertionStartTime = System.nanoTime(); // Start timer before the method is called
         sorter.insertionSort(arr, 0, arr.length); // Call sort() on sorter
-        long insertionEndTime = System.currentTimeMillis(); // End timer after the method terminates
+        long insertionEndTime = System.nanoTime(); // End timer after the method terminates
 
         System.out.println("*** Your Insertion Sort - Sorted Array: ");
         System.out.println(Arrays.toString(arr)); // Print the sorted array using the sort() method created above
@@ -93,22 +93,22 @@ class Sort {
 
 
         // QUICK SORT
-
         Sort sorter1 = new Sort(); // Create an Insertion Sort object
 
-        long quickSortStartTime = System.currentTimeMillis(); // Start timer before quickSort()is called
+        long quickSortStartTime = System.nanoTime(); // Start timer before quickSort()is called
         sorter1.quickSort(arr, 0, arr.length - 1); // Call sort() on sorter
-        long quickSortEndTime = System.currentTimeMillis(); // End timer after quickSort() terminates
+        long quickSortEndTime = System.nanoTime(); // End timer after quickSort() terminates
 
         System.out.println("*** Your Quick Sort - Sorted Array: ");
         System.out.println(Arrays.toString(arr)); // Print the sorted array using the sort() method created above
 
         System.out.println(); // Print blank line to make output easier to read
 
+        // Print out times for each method's total execution time
         System.out.println("*************");
         System.out.println("*** TIMES ***");
         System.out.println("*************");
-        System.out.println("Insertion Sort took: " + (insertionEndTime - insertionStartTime) + " milliseconds");
-        System.out.println("Quick Sort took: " + (quickSortEndTime - quickSortStartTime) + " milliseconds");
+        System.out.println("Insertion Sort took: " + (insertionEndTime - insertionStartTime) + " nanoseconds");
+        System.out.println("Quick Sort took: " + (quickSortEndTime - quickSortStartTime) + " nanoseconds");
     }
 }
