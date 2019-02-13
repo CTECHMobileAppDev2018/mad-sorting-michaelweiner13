@@ -3,7 +3,7 @@ import java.util.Arrays;
 class Sort {
 
     // Method to do an INSERTION SORT on a given array
-    public void insertionSort(double arr[]) {
+    public void insertionSort(double arr[], long start, long end) {
       for (int i = 1; i < arr.length; i++) { // Loop through the array starting at the second item to be able to comapre it to the first item
 
         // Declare and initalize a variable to store the value of the array item of the current position of the loop to compare it to the item to the left
