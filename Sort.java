@@ -9,8 +9,7 @@ class Main {
 
   
     // Test program 
-    public static void main(String args[]) 
-    { 
+    public static void main(String args[]) { 
         double arr[] = {10.0, 7.1, 8.6, 9.9, 1.8, 5.0}; 
         System.out.println("original array: "); 
         System.out.println(Arrays.toString(arr));
