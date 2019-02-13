@@ -18,7 +18,7 @@ class Main
         System.out.println(Arrays.toString(arr));
         
         // create a sorted version to test.
-        double sortedArr[] = arr;
+        double sortedArr[] = arr.clone();
         Arrays.sort(sortedArr);
         System.out.println("sorted array: "); 
         System.out.println(Arrays.toString(sortedArr));
