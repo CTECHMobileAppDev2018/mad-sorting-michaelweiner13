@@ -1,11 +1,9 @@
 import java.util.Arrays;
 
-class Main 
-{ 
+class Main { 
 
     // start and end are optional - some sorting algorithms use them, but you can ignore them
-    void sort(double arr[], long start, long end) 
-    { 
+    void sort(double arr[], long start, long end) { 
       // sort the array here
     } 
 
